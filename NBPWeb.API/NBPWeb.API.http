@@ -1,19 +1,19 @@
 @hostAddress = http://localhost:5097
 
 # Testing the GetExchangeRates method
-GET {{hostAddress}}/exchange-rates
+GET {{hostAddress}}/api/nbp/exchange-rates
 Accept: application/json
 
 ###
 
 # Testing the GetExchangeRate method for currency code USD
-GET {{hostAddress}}/exchange-rate/USD
+GET {{hostAddress}}/api/nbp/exchange-rate/USD
 Accept: application/json
 
 ###
 
 # Testing the GetExchangeRate method for currency code EUR
-GET {{hostAddress}}/exchange-rate/EUR
+GET {{hostAddress}}/api/nbp/exchange-rate/EUR
 Accept: application/json
 
 ###
